@@ -27,6 +27,8 @@ export default function Introduction() {
                 computer science. I am currently working as a Software
                 development engineer intern at <span className="cyan">Amazon Web Services</span>.
             </p>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
     );
 }
