@@ -24,10 +24,12 @@ export default function SectionAbout() {
                     degree in computer science. I am currently
                     working as a Software development engineer
                     intern at Amazon Web Services.
+                    <br />
                     am a french student completing a master's degree
                     in computer science. am a french student
                     completing a master's degree in computer
                     science.
+                    <br />
                     Here are a few technologies I've been working
                     with recently:
                 </p>

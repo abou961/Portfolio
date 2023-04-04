@@ -30,6 +30,7 @@ export default function Sidebar() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="#CCD6F6"
+                                strokeWidth="2"
                                 className="sidebar--git"
                                 onMouseOver={() => setIsGithubHovered(true)}
                                 onMouseLeave={() => setIsGithubHovered(false)}
