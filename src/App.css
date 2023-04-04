@@ -223,9 +223,56 @@ p {
 }
 
 .section-about {
+  display: flex;
   margin-left: 17%;
   margin-top: 10%;
-  width: 35%;
+}
+
+.section-about--content {
+  width: 50%;
+}
+
+
+
+.section--about--illustration--container {
+  position: relative;
+}
+
+.section--about--illustration--image {
+  width: 270px;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 60px;
+  border-radius: 5px;
+}
+
+.section--about--illustration--overlay {
+  background: #64FFDA;
+  width: 270px;
+  height: 270px;
+  margin-top: 70px;
+  margin-left: 60px;
+  opacity: 0.4;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.section--about--illustration--overlay:hover {
+  opacity: 0;
+}
+
+
+.section--about--illustration--frame {
+  border: #64FFDA;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  width: 270px;
+  height: 270px;
+  margin-top: 90px;
+  margin-left: 80px;
+  position: absolute;
+  border-radius: 5px;
 }
 
 .section-about--text {

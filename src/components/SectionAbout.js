@@ -1,6 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function SectionAbout() {
+
+    const [isHovered, setIsHovered] = React.useState(false);
+
+    // TODO: Make the logos going up when hovered
+    const frameVariants = {
+        hovered: { y: -15, x: -15 },
+        unhovered: { y: 0, x: 0 }
+    };
+
+
     return (
         <div className="section-about">
             <div className="section-about--content">
@@ -33,6 +44,22 @@ export default function SectionAbout() {
                     </ul>
                 </div>
             </div>
+            <div className="section--about--illustration">
+                <div className="section--about--illustration--container"
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                >
+                    <motion.div
+                        className="section--about--illustration--frame"
+                        variants={frameVariants}
+                        animate={isHovered ? "hovered" : "unhovered"}
+                    >
+                    </motion.div>
+                    <img src={require('../images/img_jean.jpg')} alt="Jean" className="section--about--illustration--image" />
+                    <div className="section--about--illustration--overlay"></div>
+                </div>
+            </div>
+
 
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
