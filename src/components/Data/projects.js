@@ -27,6 +27,20 @@ export default {
             description: 'Design of a module in C++ which parse and analyze a log file w/ parameters.',
             git_url: 'https://github.com/abou961/Log-Parser-Analyser',
             isHovered: false
+        },
+        {
+            id: 5,
+            title: 'IDA* Algorithm',
+            description: 'Implementation of the IDA* algorithm in C++ in order to solve an optimization problem.',
+            git_url: 'https://github.com/abou961/IDA-Algorithm',
+            isHovered: false
+        },
+        {
+            id: 6,
+            title: 'ML Project',
+            description: 'Machine Learning project to predict the charges of an insurance company.',
+            git_url: 'https://github.com/abou961/Deep-Learning-Projects',
+            isHovered: false
         }
     ]
 }

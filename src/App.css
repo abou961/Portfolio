@@ -161,6 +161,7 @@ p {
 
 .header--button:hover {
   background-color: rgba(100, 255, 219, 0.4);
+  cursor: pointer;
 }
 
 .header--item {
@@ -326,16 +327,16 @@ p {
 }
 
 .section-projects--projects {
-  display: flex;
-  overflow-x: scroll;
+  display: grid;
   width: 75%;
+  grid-template-columns: 253px 253px 253px;
 }
 
 .section-projects--projects--cards {
   width: 200px;
   height: 200px;
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 15px;
   background-color: #112240;
   padding: 20px;
   border-radius: 5px;
@@ -353,8 +354,7 @@ p {
 
 .section-projects--container {
   width: 100%;
-  overflow: hidden;
-  height: 300px;
+  height: auto;
 }
 
 .top-card {
@@ -368,4 +368,37 @@ p {
   margin-right: 10px;
   margin-top: 4px;
 
+}
+
+.section-about--button {
+  background-color: #0A192F;
+  height: 50px;
+  width: 260px;
+  font-family: "anka";
+  color: #64FFDA;
+  font-size: 16px;
+  border-color: #64FFDA;
+  border-width: 2px;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-about--button--link {
+  height: 50px;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.section-about--button:hover {
+  background-color: rgba(100, 255, 219, 0.4);
+  cursor: pointer;
+}
+
+.section-projects--button-container {
+  display: flex;
+  margin-top: 50px;
+  width: 70%;
 }

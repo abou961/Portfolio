@@ -40,6 +40,11 @@ export default function SectionProjects() {
                     {cardElements}
                 </div>
             </div >
+            <div className="section-projects--button-container">
+                <a className="section-about--button--link" href="https://github.com/abou961" target="_blank" rel="noopener noreferrer">
+                    <button className="section-about--button">More on my Github &gt;</button>
+                </a>
+            </div>
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div >
     );
