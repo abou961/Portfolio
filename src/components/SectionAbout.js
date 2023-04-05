@@ -61,9 +61,6 @@ export default function SectionAbout() {
                     <div className="section--about--illustration--overlay"></div>
                 </div>
             </div>
-
-
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
     );
 }

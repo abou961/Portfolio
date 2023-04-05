@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/Header";
 import Sidebar from './components/Sidebar';
 import SectionAbout from './components/SectionAbout';
+import SectionProjects from './components/SectionProjects';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Introduction />
       <SectionAbout />
+      <SectionProjects />
     </div>
   );
 }

@@ -16,6 +16,14 @@
     url("./fonts/JetBrainsMono-Medium.ttf") format("truetype");
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
 li {
   list-style: none;
 }
@@ -229,11 +237,19 @@ p {
   margin-top: 10%;
 }
 
-.section-about--content {
+.section-projects {
+  margin-left: 17%;
+  margin-top: 10%;
+}
+
+.section-about--content,
+.section-projects--content {
   width: 50%;
 }
 
-
+.section-projects--content {
+  display: flex;
+}
 
 .section--about--illustration--container {
   position: relative;
@@ -292,7 +308,8 @@ p {
   background-color: #8892B0;
 }
 
-.section-about--title {
+.section-about--title,
+.section-projects--title {
   display: flex;
   width: 100%;
 }
@@ -306,4 +323,49 @@ p {
 .section-about--skills--list {
   width: 40%;
   margin-left: 10%;
+}
+
+.section-projects--projects {
+  display: flex;
+  overflow-x: scroll;
+  width: 75%;
+}
+
+.section-projects--projects--cards {
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #112240;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.section-projects--projects--cards--description {
+  font-size: 11px;
+}
+
+.section-projects--projects--cards--title {
+  font-size: 19px;
+  color: #CCD6F6;
+  font-family: "JetBrains";
+}
+
+.section-projects--container {
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+}
+
+.top-card {
+  display: flex;
+}
+
+.card--git {
+  width: 27px;
+  height: 27px;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 4px;
+
 }
