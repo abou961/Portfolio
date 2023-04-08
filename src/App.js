@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Sidebar from './components/Sidebar';
 import SectionAbout from './components/SectionAbout';
 import SectionProjects from './components/SectionProjects';
+import SectionExperiences from './components/SectionExperiences';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Introduction />
       <SectionAbout />
       <SectionProjects />
+      <SectionExperiences />
     </div>
   );
 }

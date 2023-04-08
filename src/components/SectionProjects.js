@@ -1,6 +1,6 @@
 import React from "react"
 import projects from "./Data/projects"
-import CardProject from "./CardProject"
+import CardProject from "./Objects/CardProject"
 
 
 export default function SectionProjects() {
@@ -22,7 +22,7 @@ export default function SectionProjects() {
     }
 
     const cardElements = cards.map((card) => (
-        <CardProject id={card.id} title={card.title} description={card.description} git_url={card.git_url} onHover={hovered} onLeave={leave} isHovered={card.isHovered} />
+        <CardProject key={card.id} id={card.id} title={card.title} description={card.description} git_url={card.git_url} onHover={hovered} onLeave={leave} isHovered={card.isHovered} />
     ));
 
 
@@ -45,7 +45,6 @@ export default function SectionProjects() {
                     <button className="section-about--button">More on my Github &gt;</button>
                 </a>
             </div>
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div >
     );
 }
