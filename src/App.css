@@ -126,7 +126,16 @@ p {
 
 .header {
   display: flex;
-  height: 70px;
+  height: 75px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #0A192F;
+}
+
+.header-shadow {
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.45);
 }
 
 .header--list {

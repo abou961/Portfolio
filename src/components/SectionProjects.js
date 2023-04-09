@@ -1,6 +1,7 @@
 import React from "react"
 import projects from "./Data/projects"
 import CardProject from "./Objects/CardProject"
+import { motion } from "framer-motion"
 
 
 export default function SectionProjects() {
@@ -28,7 +29,16 @@ export default function SectionProjects() {
 
 
     return (
-        <div className="section-projects">
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 40 }
+            }}
+            className="section-projects">
             <div className="section-projects--content">
                 <div className="section-projects--title">
                     <h4>Some things I've built</h4>
@@ -45,6 +55,6 @@ export default function SectionProjects() {
                     <button className="section-about--button">More on my Github &gt;</button>
                 </a>
             </div>
-        </div >
+        </motion.div >
     );
 }

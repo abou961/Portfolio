@@ -1,10 +1,19 @@
 import React from "react"
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion"
 
 
 export default function Introduction() {
     return (
-        <div className="intro">
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ delay: 1.6, duration: 0.5 }}
+            variants={{
+                visible: { opacity: 1 },
+                hidden: { opacity: 0 }
+            }} className="intro">
             <TypeAnimation
                 sequence={[
                     '',
@@ -27,6 +36,6 @@ export default function Introduction() {
                 computer science. I am currently working as a Software
                 development engineer intern at <span className="cyan">Amazon Web Services</span>.
             </p>
-        </div>
+        </motion.div>
     );
 }

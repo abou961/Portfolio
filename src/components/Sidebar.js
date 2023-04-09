@@ -17,7 +17,16 @@ export default function Sidebar() {
         <div className="sidebar">
             <div className="fixed">
                 <ul className="sidebar--list">
-                    <li className="sidebar--item">
+                    <motion.li
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ delay: 1.4, duration: 0.3 }}
+                        variants={{
+                            visible: { opacity: 1, x: 0 },
+                            hidden: { opacity: 0, x: -40 }
+                        }}
+                        className="sidebar--item">
                         <a
                             href="https://github.com/abou961"
                             aria-label="GitHub"
@@ -42,8 +51,17 @@ export default function Sidebar() {
                                 </path>
                             </motion.svg>
                         </a>
-                    </li>
-                    <li className="sidebar--item">
+                    </motion.li>
+                    <motion.li
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ delay: 1.6, duration: 0.3 }}
+                        variants={{
+                            visible: { opacity: 1, x: 0 },
+                            hidden: { opacity: 0, x: -40 }
+                        }}
+                        className="sidebar--item">
                         <a href="https://www.linkedin.com/in/jean-abou-moussa" aria-label="Linkedin" target="_blank" rel="noreferrer">
                             <motion.svg xmlns="http://www.w3.org/2000/svg"
                                 role="img"
@@ -66,9 +84,18 @@ export default function Sidebar() {
                                 </circle>
                             </motion.svg>
                         </a>
-                    </li>
+                    </motion.li>
                 </ul>
-                <div class="vl"></div>
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{ delay: 1.8, duration: 0.3 }}
+                    variants={{
+                        visible: { opacity: 1, x: 0 },
+                        hidden: { opacity: 0, x: -40 }
+                    }} class="vl">
+                </motion.div>
             </div>
         </div>
     )

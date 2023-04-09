@@ -2,6 +2,7 @@ import React from "react";
 import Experience from "./Objects/Experience"
 import experiences from "./Data/experiences";
 import MenuExperiences from "./MenuExperiences";
+import { motion } from "framer-motion";
 
 export default function SectionExperiences() {
     const [cardsExperiences, setCardsExperiences] = React.useState(experiences.experiences)
@@ -43,7 +44,16 @@ export default function SectionExperiences() {
 
 
     return (
-        <div className="section-experiences--container">
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 40 }
+            }}
+            className="section-experiences--container">
             <div className="section-experiences--content">
                 <div className="section-experiences--title">
                     <h4>Where I've worked</h4>
@@ -58,7 +68,7 @@ export default function SectionExperiences() {
                     {experienceElements}
                 </div>
             </div>
-        </div>
+        </motion.div>
 
     );
 }

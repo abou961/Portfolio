@@ -13,7 +13,16 @@ export default function SectionAbout() {
 
 
     return (
-        <div className="section-about">
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ delay: 1.4, duration: 0.5 }}
+            variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 40 }
+            }}
+            className="section-about">
             <div className="section-about--content">
                 <div className="section-about--title">
                     <h4>About me</h4>
@@ -61,6 +70,6 @@ export default function SectionAbout() {
                     <div className="section--about--illustration--overlay"></div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
