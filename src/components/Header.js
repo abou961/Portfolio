@@ -1,5 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
+import useScrollDirection from "../utils/useScrollDirection"
 
 
 export default function Header() {
@@ -15,8 +16,19 @@ export default function Header() {
 
     window.addEventListener("scroll", updateShadow)
 
+    const scrollDirection = useScrollDirection();
+
+    const frameVariants = {
+        hide: { y: -75 },
+        show: { y: 0 }
+    };
+
     return (
-        <div className={shadow ? "header header-shadow" : "header"}>
+        <motion.div
+            className={shadow ? "header header-shadow" : "header"}
+            variants={frameVariants}
+            animate={scrollDirection === "up" ? "show" : "hide"}
+        >
             <ul className="header--list">
                 <motion.li
                     initial="hidden"
@@ -80,6 +92,6 @@ export default function Header() {
                         Resume</button>
                 </motion.li>
             </ul>
-        </div>
+        </motion.div>
     )
 }
