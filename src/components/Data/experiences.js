@@ -12,7 +12,8 @@ export default {
                 "Worked in an agile environment to deliver high- quality software."
             ],
             visible: true,
-            denomination: "AWS"
+            denomination: "AWS",
+            hovered: false
         },
         {
             id: 2,
@@ -25,7 +26,8 @@ export default {
                 "Maintained and improved student response verification systems"
             ],
             visible: false,
-            denomination: "Kwyk"
+            denomination: "Kwyk",
+            hovered: false
         },
         {
             id: 3,
@@ -39,7 +41,8 @@ export default {
 
             ],
             visible: false,
-            denomination: "ETIC"
+            denomination: "ETIC",
+            hovered: false
         }
     ]
 }

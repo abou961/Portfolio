@@ -463,7 +463,7 @@ p {
 
 .menu-experiences--item {
   width: 100%;
-  height: 70px;
+  height: 50px;
   padding-left: 10px;
   font-size: 21px;
 }
@@ -473,7 +473,7 @@ p {
   color: #64FFDA;
   cursor: pointer;
   width: 100%;
-  height: 70px;
+  height: 50px;
   padding-left: 10px;
   font-size: 21px;
 }
@@ -481,4 +481,27 @@ p {
 .section-experiences--container {
   margin-left: 17%;
   margin-top: 10%;
+}
+
+.menu-experiences--cursor-rectangle {
+  width: 5px;
+  height: 50px;
+  background-color: #64FFDA;
+  margin-left: -15px;
+  margin-top: -20px;
+  position: absolute;
+}
+
+.menu-experiences-denomination {
+  position: absolute;
+}
+
+.menu-experiences--selected-rectangle {
+  width: 150px;
+  height: 50px;
+  background-color: #64FFDA;
+  margin-left: -15px;
+  margin-top: -20px;
+  position: absolute;
+  opacity: 0.4;
 }
