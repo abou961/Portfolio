@@ -1,5 +1,5 @@
 import React from "react"
-import { motion } from "framer-motion"
+import { easeIn, motion } from "framer-motion"
 import useScrollDirection from "../utils/useScrollDirection"
 
 
@@ -92,6 +92,6 @@ export default function Header() {
                         Resume</button>
                 </motion.li>
             </ul>
-        </motion.div>
+        </motion.div >
     )
 }
