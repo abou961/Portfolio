@@ -38,7 +38,8 @@ export default function SectionProjects() {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 40 }
             }}
-            className="section-projects">
+            className="section-projects"
+            id="projects">
             <div className="section-projects--content">
                 <div className="section-projects--title">
                     <h4>Some things I've built</h4>

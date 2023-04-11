@@ -1,8 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Experience(props) {
     return (
-        <div className="experience">
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+                visible: { opacity: 1 },
+                hidden: { opacity: 0 }
+            }}
+            className="experience">
             <div className="experience--header">
                 <h2 className="experience--header--role">
                     {props.role}
@@ -27,6 +37,6 @@ export default function Experience(props) {
             </div>
 
 
-        </div>
+        </motion.div>
     );
 }

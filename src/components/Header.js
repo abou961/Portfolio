@@ -1,6 +1,7 @@
 import React from "react"
 import { easeIn, motion } from "framer-motion"
 import useScrollDirection from "../utils/useScrollDirection"
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 export default function Header() {
@@ -27,6 +28,7 @@ export default function Header() {
         <motion.div
             className={shadow ? "header header-shadow" : "header"}
             variants={frameVariants}
+            transition={{ duration: 0.4 }}
             animate={scrollDirection === "up" ? "show" : "hide"}
         >
             <ul className="header--list">

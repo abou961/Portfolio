@@ -261,6 +261,12 @@ p {
   margin-bottom: 10%;
 }
 
+.section-contact {
+  margin-left: 17%;
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
 .section-experiences--description {
   width: 75%;
 }
@@ -271,12 +277,17 @@ p {
 
 .section-about--content,
 .section-projects--content,
-.section-experiences--content {
+.section-experiences--content,
+.section-contact--content {
   width: 50%;
 }
 
 .section-experiences--title {
   width: 100%;
+  display: flex;
+}
+
+.section-contact--title {
   display: flex;
 }
 
@@ -513,4 +524,23 @@ p {
   margin-top: -20px;
   position: absolute;
   opacity: 0.4;
+}
+
+.section-contact--list {
+  margin-left: 25%;
+  width: 100%;
+}
+
+.section-contact--list--item--link {
+  text-decoration: none;
+  color: #64FFDA;
+}
+
+.footer--content {}
+
+.footer--text {
+  font-size: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
