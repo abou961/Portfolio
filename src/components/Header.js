@@ -1,7 +1,9 @@
 import React from "react"
 import { easeIn, motion } from "framer-motion"
 import useScrollDirection from "../utils/useScrollDirection"
-import { HashLink as Link } from 'react-router-hash-link';
+import * as Scroll from 'react-scroll';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 
 export default function Header() {
@@ -42,7 +44,7 @@ export default function Header() {
                         hidden: { opacity: 0, y: -40 }
                     }}
                 >
-                    <a className="header--item" href="www.google.com">About</a>
+                    <Link activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={500} className="header--item">About</Link>
                 </motion.li>
 
                 <motion.li
@@ -55,7 +57,7 @@ export default function Header() {
                         hidden: { opacity: 0, y: -40 }
                     }}
                 >
-                    <a className="header--item" href="www.google.com">Projects</a>
+                    <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-70} duration={500} className="header--item">Projects</Link>
                 </motion.li>
                 <motion.li
                     initial="hidden"
@@ -67,7 +69,7 @@ export default function Header() {
                         hidden: { opacity: 0, y: -40 }
                     }}
                 >
-                    <a className="header--item" href="www.google.com">Experiences</a>
+                    <Link activeClass="active" to="experiences" spy={true} smooth={true} offset={-70} duration={500} className="header--item">Experiences</Link>
                 </motion.li>
                 <motion.li
                     initial="hidden"
@@ -79,7 +81,7 @@ export default function Header() {
                         hidden: { opacity: 0, y: -40 }
                     }}
                 >
-                    <a className="header--item" href="www.google.com">Contact</a>
+                    <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={500} className="header--item">Contact</Link>
                 </motion.li>
                 <motion.li
                     initial="hidden"

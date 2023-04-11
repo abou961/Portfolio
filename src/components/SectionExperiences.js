@@ -53,7 +53,8 @@ export default function SectionExperiences() {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 40 }
             }}
-            className="section-experiences--container">
+            className="section-experiences--container"
+            name="experiences">
             <div className="section-experiences--content">
                 <div className="section-experiences--title">
                     <h4>Where I've worked</h4>

@@ -22,7 +22,8 @@ export default function SectionAbout() {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 40 }
             }}
-            className="section-about">
+            className="section-about"
+            name="about">
             <div className="section-about--content">
                 <div className="section-about--title">
                     <h4>About me</h4>

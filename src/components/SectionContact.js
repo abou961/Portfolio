@@ -2,7 +2,10 @@ import React from "react";
 
 export default function SectionContact() {
     return (
-        <div className="section-contact">
+        <div
+            className="section-contact"
+            name="contact"
+        >
             <div className="section-contact--content">
                 <div className="section-contact--title">
                     <h4>Contact me</h4>

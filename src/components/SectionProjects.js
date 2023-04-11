@@ -39,7 +39,8 @@ export default function SectionProjects() {
                 hidden: { opacity: 0, y: 40 }
             }}
             className="section-projects"
-            id="projects">
+            id="projects"
+            name="projects">
             <div className="section-projects--content">
                 <div className="section-projects--title">
                     <h4>Some things I've built</h4>
