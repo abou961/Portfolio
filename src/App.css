@@ -35,10 +35,10 @@ li {
 
 .fixed {
   position: fixed;
-  width: 140px;
+  width: 10%;
   height: 100%;
   background-color: #0A192F;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 body {
@@ -232,14 +232,25 @@ p {
   stroke: #64FFDA;
 }
 
+
 .sidebar--in {
   width: 23px;
   margin-left: 8px;
-  margin-bottom: 7px;
 }
 
 .sidebar--in:hover {
   stroke: #64FFDA;
+}
+
+.sidebar--leetcode {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-bottom: 7px;
+}
+
+.sidebar--leetcode:hover {
+  fill: #64FFDA;
 }
 
 .section-about {
@@ -249,7 +260,6 @@ p {
 }
 
 .section-projects {
-  margin-left: 17%;
   margin-top: 10%;
 }
 
@@ -295,6 +305,10 @@ p {
 .section-projects--content,
 .section-experiences--content {
   display: flex;
+}
+
+.section-projects--content {
+  margin-left: 17%;
 }
 
 .section--about--illustration--container {
@@ -373,7 +387,6 @@ p {
 
 .section-projects--projects {
   display: grid;
-  width: 75%;
   grid-template-columns: 253px 253px 253px;
 }
 
@@ -400,6 +413,8 @@ p {
 .section-projects--container {
   width: 100%;
   height: auto;
+  width: 66%;
+  margin-left: 17%;
 }
 
 .top-card {
@@ -432,8 +447,7 @@ p {
 .section-about--button--link {
   height: 50px;
   width: 260px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 225px;
   text-decoration: none;
 }
 
@@ -445,11 +459,13 @@ p {
 .section-projects--button-container {
   display: flex;
   margin-top: 50px;
-  width: 70%;
+  width: 90%;
+  margin-left: 10%;
 }
 
 .experience {
   width: 100%;
+  margin-left: 10px;
 }
 
 .experience--header {

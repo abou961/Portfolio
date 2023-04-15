@@ -2,6 +2,7 @@ import React from "react"
 import { easeIn, motion } from "framer-motion"
 import useScrollDirection from "../utils/useScrollDirection"
 import * as Scroll from 'react-scroll';
+import Resume from "../files/ABOU_MOUSSA_Jean.pdf"
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
@@ -83,18 +84,20 @@ export default function Header() {
                 >
                     <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={500} className="header--item">Contact</Link>
                 </motion.li>
-                <motion.li
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ delay: 1.4, duration: 0.3 }}
-                    variants={{
-                        visible: { opacity: 1, y: 0 },
-                        hidden: { opacity: 0, y: -40 }
-                    }}
-                    className="header--item"><button className="header--button">
-                        Resume</button>
-                </motion.li>
+                <a href={Resume} download="ABOU_MOUSSA_Jean_Resume" target='_blank'>
+                    <motion.li
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ delay: 1.4, duration: 0.3 }}
+                        variants={{
+                            visible: { opacity: 1, y: 0 },
+                            hidden: { opacity: 0, y: -40 }
+                        }}
+                        className="header--item"><button className="header--button">
+                            Resume</button>
+                    </motion.li>
+                </a>
             </ul>
         </motion.div >
     )

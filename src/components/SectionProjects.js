@@ -50,13 +50,14 @@ export default function SectionProjects() {
             <div className="section-projects--container">
                 <div className="section-projects--projects">
                     {cardElements}
+                    <div className="section-projects--button-container">
+                        <a className="section-about--button--link" href="https://github.com/abou961" target="_blank" rel="noopener noreferrer">
+                            <button className="section-about--button">More on my Github &gt;</button>
+                        </a>
+                    </div>
                 </div>
             </div >
-            <div className="section-projects--button-container">
-                <a className="section-about--button--link" href="https://github.com/abou961" target="_blank" rel="noopener noreferrer">
-                    <button className="section-about--button">More on my Github &gt;</button>
-                </a>
-            </div>
+
         </motion.div >
     );
 }

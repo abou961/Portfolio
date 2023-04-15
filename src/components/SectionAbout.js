@@ -30,18 +30,16 @@ export default function SectionAbout() {
                     <div className="section--line" />
                 </div>
                 <p className="section-about--text">
-                    I am a french student completing a master's
-                    degree in computer science. I am currently
-                    working as a Software development engineer
-                    intern at Amazon Web Services.
+                    Hi, I'm Jean, a student in software engineering with a passion for algorithms and data structures.
                     <br />
-                    am a french student completing a master's degree
-                    in computer science. am a french student
-                    completing a master's degree in computer
-                    science.
+                    Recently, I had the opportunity to participate in the 2022 European Competitive Programming
+                    Contest <a href="https://swerc.eu/2022/about/" target="_blank" className="cyan">SWERC ICPC</a>, where I put my skills to the test and learned from other talented developers.
                     <br />
-                    Here are a few technologies I've been working
-                    with recently:
+                    <br />
+                    Currently completing a master's degree in computer science at INSA Lyon, I have also gained professional experience through internships and part-time positions.
+                    <br />
+                    <br />
+                    Here are a few technologies I've been working with recently:
                 </p>
                 <div className="section-about--skills">
                     <ul className="customed-ul section-about--skills--list">

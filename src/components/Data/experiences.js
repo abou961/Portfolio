@@ -8,8 +8,7 @@ export default {
             missions: [
                 "Designed innovative technologies in a large distributed computing environment",
                 "Built distributed storage, index, and query systems that are scalable, fault - tolerant, and easy to manage / use.",
-                "Developed the ability to design and code the right solutions starting with broadly defined problems.",
-                "Worked in an agile environment to deliver high- quality software."
+                "Developed the ability to design and code the right solutions starting with broadly defined problems."
             ],
             visible: true,
             denomination: "AWS",

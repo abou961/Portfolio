@@ -9,7 +9,6 @@ export default function SectionExperiences() {
 
     const experienceElements = cardsExperiences.map((card) => {
         if (card.visible) {
-            console.log(card);
             return <Experience key={card.id} role={card.role} company={card.company} date={card.date} missions={card.missions} onHover={hover} onLeave={leave} isHovered={card.hovered} visible={card.visible} />
         }
         return null;
@@ -18,7 +17,6 @@ export default function SectionExperiences() {
 
     function hover(id) {
         setCardsExperiences(cardsExperiences.map((card) => {
-            console.log(card.id);
             if (card.id === id) {
                 return { ...card, hovered: true };
             }
