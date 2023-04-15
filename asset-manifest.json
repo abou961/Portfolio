@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e3110a65.css",
-    "main.js": "/Portfolio/static/js/main.7f72d645.js",
+    "main.css": "/Portfolio/static/css/main.0caad675.css",
+    "main.js": "/Portfolio/static/js/main.4521bb15.js",
     "static/js/787.ef0c4325.chunk.js": "/Portfolio/static/js/787.ef0c4325.chunk.js",
     "static/media/Inter-Bold.ttf": "/Portfolio/static/media/Inter-Bold.9aab1ebe6bd16660e37e.ttf",
     "static/media/JetBrainsMono-Medium.ttf": "/Portfolio/static/media/JetBrainsMono-Medium.a62f3f8ee7c13d92dd8d.ttf",
+    "static/media/ABOU_MOUSSA_Jean.pdf": "/Portfolio/static/media/ABOU_MOUSSA_Jean.cf1dba3a9761d386847b.pdf",
     "static/media/img_jean.jpg": "/Portfolio/static/media/img_jean.f95d99a60739c9362b5c.jpg",
     "static/media/anka-coder.ttf": "/Portfolio/static/media/anka-coder.c44216e10444b84a7e92.ttf",
     "index.html": "/Portfolio/index.html",
-    "main.e3110a65.css.map": "/Portfolio/static/css/main.e3110a65.css.map",
-    "main.7f72d645.js.map": "/Portfolio/static/js/main.7f72d645.js.map",
+    "main.0caad675.css.map": "/Portfolio/static/css/main.0caad675.css.map",
+    "main.4521bb15.js.map": "/Portfolio/static/js/main.4521bb15.js.map",
     "787.ef0c4325.chunk.js.map": "/Portfolio/static/js/787.ef0c4325.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3110a65.css",
-    "static/js/main.7f72d645.js"
+    "static/css/main.0caad675.css",
+    "static/js/main.4521bb15.js"
   ]
 }
